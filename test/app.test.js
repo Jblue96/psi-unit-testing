@@ -1,5 +1,6 @@
 var expect = require('chai').expect;
 var request = require('request');
+// var addOne = require('../src/modules/addOne');
 
 describe('test main server file', function() {
   var url = 'http://localhost:4567/addOne/5';
@@ -19,6 +20,6 @@ describe('test main server file', function() {
     request(url, function(err, res, body) {
       expect(res.statusCode).to.equal(200);
       done();
-    })
+    });
   });
 });
